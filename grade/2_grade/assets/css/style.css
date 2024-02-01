@@ -1,0 +1,511 @@
+@charset "uft-8";
+
+* {
+    margin: auto;
+    padding: 0;
+    color: black;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.0;
+    color: #333;
+    background: rgb(192, 192, 192);
+}
+
+
+
+
+/* header */
+header {
+    width: 100%;
+    height: 70px;
+    background: rgb(192, 192, 192);
+    padding: 0px 0;
+    text-align: center;
+    box-shadow: 2px 2px 10px black;
+    margin: 2px 0px;
+}
+
+header img {
+    max-height: 70px;
+    vertical-align: bottom;
+    align-self: baseline;
+}
+
+/* nav */
+.nav-toggle {
+    display: none;
+}
+
+
+/* ハンバーガーボタン */
+.btn-burger {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 2;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url("../img/burger.png") center center / 35px 20px no-repeat;
+    cursor: pointer;
+}
+
+
+/* メニューが開いたときの、ハンバーガーボタンの画像を指定 */
+.nav-toggle:checked~.btn-burger {
+    background: url("../img/close.png") center / 40px 40px no-repeat;
+}
+
+.nav {
+    padding-top: 1px;
+    background: url("../img/nav_bg.png") center / cover no-repeat;
+}
+
+.nav-list {
+    display: none;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.nav-list li {
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-list a {
+    display: block;
+    color: #fff;
+}
+
+.nav-toggle:checked~.nav .nav-list {
+    display: block;
+}
+
+footer {
+    padding: 40px 0 30px;
+    color: #032559;
+    text-align: center;
+    background: rgb(198, 198, 198)
+}
+
+.sns img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* main */
+
+main {
+    height: auto;
+}
+.Contents h2,
+.Contents p {
+    text-align: center;
+    margin: .5em;
+}
+
+.Contents h2 {
+    border-top: white 1px solid;
+    padding: .5em;
+    font-size: 30px;
+}
+
+.Contents .self-portrait img {
+    display: block;
+    margin: 1.5em auto;
+    height: 100px;
+}
+
+.Contents span {
+    display: block;
+    font-size: 0.7em;
+    margin-top: 8px;
+}
+
+.Contents p {
+    margin: -1em 0em;
+    line-height: 25px;
+}
+
+.Contents .intro {
+    margin: 2em;
+}
+
+.Contents img {
+    max-width: 350px;
+}
+
+.Contents video {
+    max-width: 350px;
+    margin-bottom: 55px;
+}
+
+.Contents model-viewer {
+    height: 450px;
+    width: 60%
+}
+
+iframe {
+    display: flex;
+    width: 350px;
+    height: 196.88px;
+    margin-bottom: 55px;
+}
+
+.sub-contents {
+    margin: 0px 10% 5.5em;
+    text-align: center;
+}
+
+.sub-contents span {
+    display: block;
+    font-size: 0.7em;
+}
+
+
+.Contents .box-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: auto;
+}
+
+.Contents .exp {
+    margin-bottom: 1px;
+}
+
+.Contents .box-area figure {
+    margin: 10px auto;
+}
+
+.Contents .box-area figcaption {
+    text-align: center;
+}
+
+.hobbies {
+    width: auto;
+}
+
+.hobbies dt {
+    font-weight: bold;
+}
+
+.hobbies dd {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hobbies img {
+    margin: 10px 0;
+    max-width: 300px;
+}
+
+.sub-contents h2 {
+    border-left: 6px solid;
+    padding: 0.5em 0 0.5em 1em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.sub-contents .sub-contents .hobbies img {
+    display: block;
+    height: 50px;
+}
+
+.sub-contents canvas {
+    margin: 0;
+}
+
+.form {
+    text-align: center;
+    margin: 0 0 0.5em 0;
+    font-size: 20px;
+}
+
+.Contents .form-content {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 2.5px 15px;
+    min-width: 400px;
+    min-height: auto;
+    margin: 0 0 4.35em 0;
+    font-size: 20px;
+    border: gray 2px solid;
+}
+
+.Contents .form-send {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+    border: gray 2px solid;
+    border-radius: 10%;
+}
+
+.Contents #textarea {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    padding: 2.5px 15px;
+    min-height: 27px;
+    width: 400px;
+    resize: vertical;
+    font-size: 20px;
+    font-weight: bold;
+    border: gray 2px solid;
+}
+
+.Contents #form-confirm {
+    text-align: center;
+    margin: 1em 0 0.5em 0;
+    margin-bottom: 13px;
+}
+
+
+/* under 769px */
+/* over 769px */
+@media screen and (min-width: 768px) {
+
+    /* header */
+    header {
+        width: 100%;
+        height: 70px;
+        background: rgb(192, 192, 192);
+        padding: 0px 0;
+        text-align: center;
+        box-shadow: 2px 2px 10px white;
+    }
+
+    header img {
+        max-height: 70px;
+        vertical-align: bottom;
+        align-self: baseline;
+    }
+
+    /* nav */
+    .btn-burger {
+        display: none;
+    }
+
+    .nav {
+        margin: 2px 0px;
+        padding: 30px 0;
+    }
+
+    .nav-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-list li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        padding: 0 20px;
+        line-height: 1;
+        border-right: 1px solid #fff;
+        list-style: none;
+    }
+
+    .nav-list li a:hover {
+        filter: drop-shadow(5px 5px 2px #000);
+        transform: translateY(-2px);
+        transition-duration: 0.5s;
+    }
+
+    .nav-list li:first-child {
+        border-left: 1px solid #fff;
+    }
+
+    /* change */
+    .nav-toggle:checked~.nav .nav-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    /* main */
+
+    .Contents h2,
+    .Contents p {
+        text-align: center;
+        margin: .5em;
+    }
+
+    .Contents h2 {
+        border-top: white 1px solid;
+        padding: .5em;
+        font-size: 30px;
+    }
+
+    .Contents .self-portrait img {
+        display: block;
+        margin: 1.5em auto;
+        height: 100px;
+    }
+
+    .Contents span {
+        display: block;
+        margin-top: 8px;
+        font-size: 0.7em;
+    }
+
+    .Contents p {
+        margin: -1em 0em;
+        line-height: 25px;
+    }
+
+    .Contents .intro {
+        margin: 2em;
+    }
+
+    .Contents img {
+        max-width: 300px;
+    }
+
+    .Contents video {
+        max-width: 800px;
+        margin-bottom: 55px;
+    }
+
+    .Contents model-viewer {
+        display: flex;
+        max-width: 768px;
+        height: 432px;
+    }
+
+    iframe {
+        display: flex;
+        width: 768px;
+        height: 432px;
+    }
+
+    .sub-contents {
+        margin: 0px 20% 7.5em;
+        text-align: left;
+    }
+
+    .sub-contents span{
+        display: block;
+        font-size: 0.7em;
+    }
+
+    .Contents .box-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: auto;
+    }
+
+    .Contents .box-area figure {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin: auto 100px;
+    }
+
+    .Contents .box-area figcaption {
+        text-align: center;
+    }
+
+    .hobbies dt {
+        font-weight: bold;
+    }
+
+    .hobbies dd {
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+    .hobbies img {
+        margin: 10px 0;
+        max-height: 250px;
+    }
+
+    .sub-contents h2 {
+        border-left: 6px solid;
+        padding: 0.5em 0 0.5em 1em;
+        margin-bottom: 1em;
+    }
+
+    .sub-contents .sub-contents .hobbies img {
+        display: block;
+        height: 50px;
+    }
+
+    .sub-contents canvas {
+        margin: 0;
+    }
+
+    .form {
+        text-align: center;
+        margin: 0 0 0.5em 0;
+        font-size: 20px;
+    }
+
+    .Contents .form-content {
+        background-color: whitesmoke;
+        box-sizing: border-box;
+        height: 50px;
+        padding: 2.5px 15px;
+        min-width: 600px;
+        min-height: auto;
+        margin: 0 0 4.35em 0;
+        font-size: 17px;
+        border: gray 2px solid;
+    }
+
+    .Contents .form-send {
+        background-color: whitesmoke;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 20px;
+        padding: 0 10px;
+        cursor: pointer;
+        border: gray 2px solid;
+        border-radius: 10%;
+    }
+
+    .Contents #textarea {
+        background-color: whitesmoke;
+        box-sizing: border-box;
+        height: auto;
+        display: flex;
+        padding: 2.5px 15px;
+        min-height: 27px;
+        width: 600px;
+        resize: vertical;
+        font-size: 17px;
+        border: gray 2px solid;
+    }
+
+    .Contents #form-confirm {
+        text-align: center;
+        margin: 1em 0 0.5em 0;
+        margin-bottom: 13px;
+    }
+
+}
